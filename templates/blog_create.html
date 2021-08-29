@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Blogs</title>
+    <title>Crear Blog</title>
 </head>
 
 <body>
-    <h2>Blog List</h2>
-    <a href="{% url 'blog:create' %}">Crear</a>
+    <form method="POST">
+        {% csrf_token %} title {{form.title}}
+        <br> content {{form.content}}
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>
