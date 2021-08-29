@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django-environ = "==0.4.5"
+django-tailwind = "==2.2.0"
+Django = "==3.2.6"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
