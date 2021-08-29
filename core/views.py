@@ -1,10 +1,10 @@
 from django.views.generic import View
 from django.shortcuts import render
 
-class Home(View):
+class HomeView(View):
 
     def get(self, request, *args, **kwargs):
         context = {
 
         }
-        return render(request, '', context)
+        return render(request, 'index.html', context)
